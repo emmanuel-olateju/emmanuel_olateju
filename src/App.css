@@ -1,38 +1,86 @@
 .App {
+  /* text-align: center; */
+  background-color: white;
+  justify-content: center;
+  font-size: 90%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.App p{
+  font-size: 90%;
+}
+
+.body{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  text-align: left;
+}
+
+.About{
+  text-align: left;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.About h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.About img{
+  margin-left:20%;
+  margin-top:15%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.publication, .project, .certificate, .achievement, .society, .volunteer{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+}
+.publication-media, .project-media, .certificate-media, .achievement-media, .society-media, .volunteer-media{
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  overflow: hidden;
+}
+.publication-content, .project-content, .certificate-content, .achievement-content, .society-content, .volunteer-content{
+  /* margin-top: 1%; */
+  margin-left: 7%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+  height: 30vh;
+}
+.footer form{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.footer select, textarea{
+  margin-top: 5%;
+  width: 50%;
+  height: 70%;
+  max-width: 50%;
+  max-height: 70%;
+  background: transparent;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.footer button{
+  margin-top: 5%;
+  width: 10%;
+  background: transparent;
+  color: white;
+  border: none;
+  position: relative;
+  left: 41%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer button:hover{
+  background: white;
+  color: black;
 }

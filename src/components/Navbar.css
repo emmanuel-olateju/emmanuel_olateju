@@ -1,0 +1,34 @@
+.navbar{
+    background-color: black;
+    width:100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 10vh 1vw 10vh 1vw;
+}
+
+.linkedin:hover{
+    color:#0091ff;
+}
+
+.github:hover{
+    color:#0b1319;
+}
+
+.twitter:hover{
+    color:#06a6f1;
+}
