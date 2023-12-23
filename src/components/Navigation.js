@@ -40,8 +40,8 @@ const Navigation = () => {
         <Col xs={12} md={6} lg={2}></Col>
         <Col xs={12} md={6} lg={8}>
           <div className="d-flex justify-content-center mt-3">
-            <Link to="/"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Bio</Button></Link>
-            <Link to="/pubs"><Button variant="outline-primary" style={btnMargin} className="nav-btn">Papers</Button></Link>
+            <Link to="/emmanuel_olateju"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Bio</Button></Link>
+            <Link to="/emmanuel_olateju/pubs"><Button variant="outline-primary" style={btnMargin} className="nav-btn">Papers</Button></Link>
             <Button variant="outline-primary" style={btnMargin} className="nav-btn">Experience</Button>
             <Button variant="outline-primary" style={btnMargin} className="nav-btn">Videos</Button>
             <Button variant="outline-primary" style={btnMargin} className="nav-btn">More</Button>

@@ -16,9 +16,9 @@ function App() {
             <Intro />
         </header>
         <Navigation />
-        <Route exact path={"/"} component={About} />
-        <Route path={"/pubs"} component={Publications} />
-        {/* <Route path="*" element={About} /> */}
+        <Route exact path={"/emmanuel_olateju/"} component={About} />
+        <Route path={"/emmanuel_olateju/pubs"} component={Publications} />
+        <Route path="*" element={About} />
         <Footer />
       </Router>
     </div>
