@@ -3,7 +3,8 @@
   background-color: white;
   justify-content: center;
   font-size: 90%;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Playfair Display';
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .App p{
