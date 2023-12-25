@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Badge} from 'react-bootstrap';
+import { Github } from 'react-bootstrap-icons';
 
 const Projects = () => {
 
@@ -9,113 +10,107 @@ const Projects = () => {
     }
     const paragraphStyle = {
         fontSize:'15px',
-        marginBottom:'15px',
-        marginTop:'15px'
+        marginTop:'5px',
+        marginBottom:'10px'
     }
     const publicationTypeStyle = {
         fontSize:'17px',
-        marginLeft:'0px'
+        marginLeft:'0px',
     }
     const publicationStyle = {
         marginTop:'15px'
     }
+    const projectStyle = {
+        border: '1px solid #eeeeee',
+        borderRadius:'10px',
+        paddingLeft:'20px',
+        marginRight:'12px',
+        marginLeft:'12px',
+        paddingBottom:'20px'
+    }
+    const projectNameStyle = {
+        color:'#aaaaaa',
+        fontSize:'17px',
+        marginTop:'20px',
+        marginBottom:'10px'
+    }
+    const badgeWarning = {
+        backgroundColor: '#ffc107',
+        color: 'white',
+        borderRadius :'5px',
+        padding:'2px 6px 2px 6px',
+        fontSize:'12px',
+    }
+    const badgeSuccess = {
+        backgroundColor: '#198754',
+        color: 'white',
+        borderRadius :'5px',
+        padding:'2px 6px 2px 6px',
+        fontSize:'12px',
+    }
+    const mediaIconStyle = {
+        color: '#00917C',
+        textDecoration:'none'
+    }
 
     return (
         <Container style={containerStyle}>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Mismatch-Negativity & Schizophrenia (MMN-SZ)</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
             <Row style={publicationStyle}>
                 <Col xs={0} md={0} lg={2}></Col>
-                <Col xs={0} md={0} lg={2}></Col>
-                <Col xs={12} md={12} lg={6}>
+                <Col xs={12} md={12} lg={4} style={projectStyle}>
+                    <h6 style={projectNameStyle}>NSzED</h6>
+                    <span style={badgeWarning}>In Progress</span>
                     <p style={paragraphStyle}>
-                        Development of a model for Schizophrenia(SZ) Diagnosis. Implemented RBFN utilizing mismatch negativit(MMN), auditory steady state response(ASSR) and 
-                        fuzzy entropy from locally qcuired EEG signals as input features in objective seperation of shizophrenia(full blown, early/onset psychosis) 
-                        patients from healthy controls.
+                        Creation of first African EEG dataset for schizophrenia studies and simple RBFN network.
                     </p>
+                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Paper <Github size={15} /></a>
+                </Col>
+                <Col xs={12} md={12} lg={4} style={projectStyle}>
+                    <h6 style={projectNameStyle}>REMRES</h6>
+                    <span style={badgeWarning}>In Progress</span>
+                    <p style={paragraphStyle}>
+                        Virtual Reality & EMG integration for prosthetics/rehabilitation practice software. 
+                    </p>
+                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Article <Github size={15} /></a>
                 </Col>
                 <Col xs={0} md={0} lg={2}></Col>
             </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Residual Motor Recovery System (REMRES)</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
+            <br></br>
             <Row style={publicationStyle}>
                 <Col xs={0} md={0} lg={2}></Col>
-                <Col xs={0} md={0} lg={2}></Col>
-                <Col xs={12} md={12} lg={6}>
+                <Col xs={12} md={12} lg={4} style={projectStyle}>
+                    <h6 style={projectNameStyle}>PULSR</h6>
+                    <span style={badgeSuccess}>Deployed</span>
                     <p style={paragraphStyle}>
-                        Virtual reality software for prosthetic and othosis control practice via EMG signals towards faster adoptio of prosthetic/orthotic device. 
-                        LSTM netowrk developed for prosthetic control based on real time EMG signal features. 
+                        Planar robot for upper-limb stroke rehabilitation via reactive exercise integrating novel force sensing (SAIL).
                     </p>
+                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Github <Github size={15} /></a> , <a style={mediaIconStyle} href="https://www.researchgate.net/publication/372177454_A_Technique_for_End-Effector_Force_Estimation_in_Parallelogram_Arm_Robot_using_Link-Integrated_Load_Cells">  
+                         SAIL Paper</a>
+                </Col>
+                <Col xs={12} md={12} lg={4} style={projectStyle}>
+                    <h6 style={projectNameStyle}>Engagement Indexer</h6>
+                    <span style={badgeSuccess}>Complete</span>
+                    <p style={paragraphStyle}>
+                        EEG based neurofeedback for rewarding motor- imagery and action in stroke rehabilitation exercise. 
+                    </p>
+                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Article <Github size={15} /></a>
                 </Col>
                 <Col xs={0} md={0} lg={2}></Col>
             </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Platform for Upper Limb Stroke Rehabilitation (PULSR)</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
+            <br></br>
             <Row style={publicationStyle}>
                 <Col xs={0} md={0} lg={2}></Col>
-                <Col xs={0} md={0} lg={2}></Col>
-                <Col xs={12} md={12} lg={6}>
+                <Col xs={12} md={12} lg={4} style={projectStyle}>
+                    <h6 style={projectNameStyle}>MCHO</h6>
+                    <span style={badgeSuccess}>Deployed</span>
                     <p style={paragraphStyle}>
-                        A planar robot for upper-limb stroke rehabilitation which implements  
-                        <a href="https://www.researchgate.net/publication/372177454_A_Technique_for_End-Effector_Force_Estimation_in_Parallelogram_Arm_Robot_using_Link-Integrated_Load_Cells">  
-                         SAIL </a> a novel technology for end-effector patient input force estimation. Gamification of rehabilitation sessions and EEG based model for engagement index computation.
+                        EEG based system for control of hand-orthosis device utilizing motor-imagery.
                     </p>
+                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Github <Github size={15} /></a>
+                </Col>
+                <Col xs={12} md={12} lg={4}>
                 </Col>
                 <Col xs={0} md={0} lg={2}></Col>
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>EEG Engagement Indexer</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Motor Imagery Controlled Hand Orthosis (MCHO)</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>SSVEP Based Keypad BCI Presser</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Photoplethysmograph Analog Filter/Glucose Indexer</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Automatic Transfer Switch</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Four Way Source Selector</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
-            </Row>
-            <Row>
-                <Col xs={6} md={6} lg={2}></Col>
-                <Col xs={6} md={6} lg={6} style={publicationTypeStyle}>Mini Audio Amplifier</Col>
-                <Col xs={6} md={6} lg={2}><hr></hr></Col>
-                {/* <Col xs={6} md={6} lg={2}></Col> */}
             </Row>
         </Container>
     );

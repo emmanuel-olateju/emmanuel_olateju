@@ -18,6 +18,7 @@ const Navigation = () => {
     marginBottom:'30px'
   }
   const btnMargin = {
+    marginLeft:'10px',
     marginRight:'10px',
     borderColor:'silver',
     color:'silver',
@@ -26,12 +27,13 @@ const Navigation = () => {
     paddingRight:'15px',
   }
   const btnMarginActive = {
-    marginRight:'30px',
+    marginLeft:'10px',
+    marginRight:'10px',
     borderColor:'#00917C',
     color:'#00917C',
     borderRadius:'25px',
-    paddingLeft:'35px',
-    paddingRight:'35px',
+    paddingLeft:'15px',
+    paddingRight:'15px',
   }
 
   return (
@@ -41,11 +43,11 @@ const Navigation = () => {
         <Col xs={12} md={6} lg={8}>
           <div className="d-flex justify-content-center mt-3">
             <Link to="/emmanuel_olateju"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Bio</Button></Link>
-            <Link to="/emmanuel_olateju/pubs"><Button variant="outline-primary" style={btnMargin} className="nav-btn">Papers</Button></Link>
-            <Link to="/emmanuel_olateju/experience"><Button variant="outline-primary" style={btnMargin} className="nav-btn">Experience</Button></Link>
-            <Link to="/emmanuel_olateju/extras"><Button variant="outline-primary" style={btnMargin} className="nav-btn">Extracurriculars</Button></Link>
-            <Link to="/emmanuel_olateju/projects"><Button variant="outline-primary" style={btnMargin} className="nav-btn">Projects</Button></Link>
-            <Button variant="outline-primary" style={btnMargin} className="nav-btn">Videos/More</Button>
+            <Link to="/emmanuel_olateju/pubs"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Papers</Button></Link>
+            <Link to="/emmanuel_olateju/experience"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Experience</Button></Link>
+            <Link to="/emmanuel_olateju/extras"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Extracurriculars</Button></Link>
+            <Link to="/emmanuel_olateju/projects"><Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Projects</Button></Link>
+            <Button variant="outline-primary" style={btnMarginActive} className="nav-btn">Videos/More</Button>
           </div>
         </Col>
         <Col xs={12} md={6} lg={2}></Col>

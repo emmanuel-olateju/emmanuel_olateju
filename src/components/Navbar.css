@@ -1,3 +1,11 @@
+.nav-btn{
+    background-color: white;
+}
+
 .nav-btn:hover{
     background-color: beige;
+}
+
+.nav-btn:click{
+    background-color: white;
 }
