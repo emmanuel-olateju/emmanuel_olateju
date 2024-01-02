@@ -109,7 +109,7 @@ const researchProjects = () => {
                     <p style={paragraphStyle}>
                         Planar robot for upper-limb stroke rehabilitation via reactive exercise integrating novel force sensing (SAIL).
                     </p>
-                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Github <Github size={15} /></a> , <a style={mediaIconStyle} href="https://www.researchgate.net/publication/372177454_A_Technique_for_End-Effector_Force_Estimation_in_Parallelogram_Arm_Robot_using_Link-Integrated_Load_Cells">  
+                    <a href="https://emmanuel-olatejus-organization.gitbook.io/pulsr/" style={mediaIconStyle}>Gitbook <Github size={15} /></a> , <a style={mediaIconStyle} href="https://www.researchgate.net/publication/372177454_A_Technique_for_End-Effector_Force_Estimation_in_Parallelogram_Arm_Robot_using_Link-Integrated_Load_Cells">  
                          SAIL Paper</a>
                 </Col>
                 <Col xs={12} md={12} lg={4} style={projectStyle}>
