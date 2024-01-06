@@ -88,7 +88,8 @@ const researchProjects = () => {
                     <p style={paragraphStyle}>
                         Creation of first African EEG dataset for schizophrenia studies and simple RBFN network.
                     </p>
-                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Paper <Github size={15} /></a>
+                    <a href="https://github.com/emmanuel-olateju" style={mediaIconStyle}>Paper <Github size={15} /></a>,
+                     <a href="https://aboutmmnsz.streamlit.app/" style={mediaIconStyle}>MMN_SZ streamlit</a> 
                 </Col>
                 <Col xs={12} md={12} lg={4} style={projectStyle}>
                     <h6 style={projectNameStyle}>REMRES</h6>
